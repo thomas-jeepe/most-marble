@@ -97,6 +97,8 @@ I don't have an npm package or anything, this is simply a WIP for now.
 
 ## Not currently working or covered
 
+- Using any test framework except jest, sorry
+- Not using typescript
 - Streams without an explicit end or error
 - Higher order streams
 - Hot streams
