@@ -1,16 +1,5 @@
-import { Sink, Stream } from 'most'
+import { Sink } from 'most'
 import { Event, Next, End, Err } from './Event'
-import { TestScheduler } from './TestScheduler'
-
-export function readInnerStream(innerStream: Stream<any>): Event[] {
-  let arr: Event[] = []
-  const sink = new CaptureSink(events => {
-    events.forEach(ev => arr.push(ev))
-  })
-  const scheduler = new TestScheduler()
-  innerStream.run(sink, scheduler)
-  return arr
-}
 
 export class CaptureSink implements Sink<any> {
   events: Event[] = []
