@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "target": "es2015",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "jsxFactory": "createElement",
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": [
+      {
+        "name": "tslint-language-service",
+        "ignoreDefinitionFiles": true
+      }
+    ],
+    "inlineSources": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

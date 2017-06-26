@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestEnviroment it should match a snapshot 1`] = `
+Array [
+  Next {
+    "frame": 0,
+    "value": 1,
+  },
+  Next {
+    "frame": 10,
+    "value": 2,
+  },
+  Next {
+    "frame": 20,
+    "value": 3,
+  },
+  End {
+    "frame": 30,
+  },
+]
+`;
